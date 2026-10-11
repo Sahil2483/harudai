@@ -32,7 +32,7 @@ Requirements: a Cloudflare account and a Google Gemini API key.
 - Train and build our own disease-detection model on this dataset, replacing the current general-purpose AI model.
 - Evaluate the model on a held-out test set and validate results with agricultural experts.
 - Add Kashmiri language support and offline detection.
-- 
+
 ## Project structure
 ```
 index.html        Farmer app
