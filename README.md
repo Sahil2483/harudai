@@ -2,8 +2,6 @@
 
 AI crop-disease detection for apple, walnut and saffron growers in Kashmir. Upload a photo of a leaf or fruit and get the likely disease, cause, treatment and prevention advice in Urdu, Hindi, Hinglish or English, with read-aloud.
 
-Live demo: https://sahil2483.github.io/harudai/
-
 Hack for Social Cause (VBYLD 2027) | Theme: Rural Development & Livelihoods
 
 ## Features
@@ -15,18 +13,19 @@ Hack for Social Cause (VBYLD 2027) | Theme: Rural Development & Livelihoods
 AI output is guidance, not a final diagnosis. The confidence value is an AI estimate, not a measured accuracy.
 
 ## Setup
-1. Create a Gemini API key at https://aistudio.google.com/apikey
-2. Create a Cloudflare Worker and deploy `worker/worker.js`.
-3. Configure the Worker:
+Requirements: a Cloudflare account and a Google Gemini API key.
 
-| Name | Type | Description |
-|---|---|---|
-| `GEMINI_API_KEY` | Secret | Gemini API key |
-| `ADMIN_PASSWORD` | Secret | Admin panel password |
-| `ADVISORIES` | KV namespace binding | Stores advisories and admin edits |
+1. Deploy `worker/worker.js` as a Cloudflare Worker.
+2. Configure the Worker environment:
 
-4. Set the Worker URL in `index.html` (`ANALYZE_ENDPOINT`).
-5. Serve the files over HTTPS (for example GitHub Pages).
+| Variable | Type |
+|---|---|
+| `GEMINI_API_KEY` | Secret |
+| `ADMIN_PASSWORD` | Secret |
+| `ADVISORIES` | KV namespace binding |
+
+3. Set the Worker URL in `index.html` (`ANALYZE_ENDPOINT`).
+4. Host the files over HTTPS (for example GitHub Pages).
 
 ## Project structure
 ```
