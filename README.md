@@ -27,6 +27,12 @@ Requirements: a Cloudflare account and a Google Gemini API key.
 3. Set the Worker URL in `index.html` (`ANALYZE_ENDPOINT`).
 4. Host the files over HTTPS (for example GitHub Pages).
 
+## Roadmap
+- Collect and label our own dataset of apple, walnut and saffron disease images from Kashmir orchards. Data from agricultural institutions such as SKUAST-Kashmir will be requested and used only with permission.
+- Train and build our own disease-detection model on this dataset, replacing the current general-purpose AI model.
+- Evaluate the model on a held-out test set and validate results with agricultural experts.
+- Add Kashmiri language support and offline detection.
+- 
 ## Project structure
 ```
 index.html        Farmer app
