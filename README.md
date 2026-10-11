@@ -2,6 +2,8 @@
 
 AI crop-disease detection for apple, walnut and saffron growers in Kashmir. Upload a photo of a leaf or fruit and get the likely disease, cause, treatment and prevention advice in Urdu, Hindi, Hinglish or English, with read-aloud.
 
+Live Demo: https://sahil2483.github.io/harudai/
+
 Hack for Social Cause (VBYLD 2027) | Theme: Rural Development & Livelihoods
 
 ## Features
